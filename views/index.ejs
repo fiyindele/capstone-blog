@@ -1,1 +1,27 @@
-<%- include("partials/header.ejs") %> <%- include("partials/footer.ejs") %>
+<%- include("partials/header.ejs") %>
+
+<body>
+  <h1>Enter your blog post below 👇</h1>
+  <form action="/submit" method="POST">
+    <div><input type="text" name="title" placeholder="Title ..." /></div>
+    <div>
+      <input type="text" name="content" placeholder="And it goes like ..." />
+    </div>
+    <input type="submit" value="Enter" />
+  </form>
+
+  <section>
+    <div class="column card-style">
+      <div class="card-text">
+        <h1>Sahara</h1>
+        <p class="ellipsis">
+          Cacti are native through most of the length of North and South
+          America, from British Columbia and Alberta southward; the southernmost
+          limit of their range extends far into Chile and Argentina.
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
+<%- include("partials/footer.ejs") %>
