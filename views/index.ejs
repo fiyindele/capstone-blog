@@ -13,12 +13,11 @@
   <section>
     <div class="column card-style">
       <div class="card-text">
-        <h1>Sahara</h1>
-        <p class="ellipsis">
-          Cacti are native through most of the length of North and South
-          America, from British Columbia and Alberta southward; the southernmost
-          limit of their range extends far into Chile and Argentina.
-        </p>
+        <% if (locals.blogHeader) { %>
+        <h1>Title: <%= blogHeader %></h1>
+        <% } %> <% if (locals.blogContent) { %>
+        <p class="ellipsis"><%= blogContent %></p>
+        <% } %>
       </div>
     </div>
   </section>

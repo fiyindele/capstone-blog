@@ -14,8 +14,10 @@ app.get("/", (req, res) => {
 app.post("/submit", (req, res) => {
   const header = req.body["title"];
   const textContent = req.body["content"];
+
   res.render("index.ejs", {
-    numOfLetters: numLetters,
+    blogHeader: header,
+    blogContent: textContent,
   });
 });
 
